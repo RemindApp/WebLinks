@@ -34,10 +34,10 @@
 
 
 function openApp(){
-let shareID =  parseURLParams(currentURL)["reminderID"];
-// change to reminder
-let remindURL = "acceptremindshare://share?shareID=" + shareID;
-window.location = remindURL;
+  let reminderID =  parseURLParams(currentURL)["reminderID"];
+  // change list
+  let reminderURL = "acceptreminder://SharedContent?reminderID=" + reminderID;
+  window.location = reminderURL;
 /*let appStoreURL = "https://itunes.apple.com/us/app/arrange/id1425337480?mt=8"
   window.open(appStoreURL,"_self") */
 
