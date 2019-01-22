@@ -6,13 +6,11 @@
 
 <head>
 
-<meta property="og:title" content="Shared list invite" />
+<meta property="og:title" content="Reminder list invite" />
 
-<meta property="og:image" content="/Users/chaseclark/Library/Mobile Documents/com~apple~CloudDocs/Developer/Remind/GitHub/ARRANGE/images/ReminderList icon.png" />
+<meta property="og:image" content="/https://remindapp.github.io/WebLinks/images/ReminderList%20icon.png" />
 
-<link rel="shortcut icon" href="/Users/chaseclark/Library/Mobile Documents/com~apple~CloudDocs/Developer/Remind/GitHub/ARRANGE/images/Remind icon iOS.png">
-
-
+<link rel="shortcut icon" href="https://remindapp.github.io/WebLinks/images/Remind%20icon%20iOS.png">
 
 <script>
   // scipt to open url or appstore
@@ -37,10 +35,10 @@
     return parms;
 }
 
-
 function openApp(){
-let shareID =  parseURLParams(currentURL)["shareID"];
-let remindURL = "acceptremindshare://share?shareID=" + shareID;
+let listID =  parseURLParams(currentURL)["listID"];
+// change list
+let remindURL = "acceptreminderlist://SharedContent?listID=" + listID;
 window.location = remindURL;
 /*let appStoreURL = "https://itunes.apple.com/us/app/arrange/id1425337480?mt=8"
   window.open(appStoreURL,"_self") */
