@@ -3,15 +3,14 @@
 <body>
 
   <head>
-  <meta property="og:title" content="Reminder list invite" />
+  <meta property="og:title" content="Remind: Reminder" />
   <meta property="og:image" content="/https://remindapp.github.io/WebLinks/images/ReminderList%20icon.png" />
   <link rel="shortcut icon" href="https://remindapp.github.io/WebLinks/images/Remind%20icon%20iOS.png">
   </head>
-
+  
 <body>
 <script>
-  // scipt to open url or appstore
-
+// scrip to open appstore if 404 url not
   var currentURL = window.location.href;
   function parseURLParams(url) {
     var queryStart = url.indexOf("?") + 1,
@@ -31,7 +30,6 @@
     }
     return parms;
 }
-
 
 function openApp(){
   let reminderID =  parseURLParams(currentURL)["reminderID"];
